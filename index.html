@@ -15,50 +15,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b4bb05ad79.js" crossorigin="anonymous"></script>
     <title>Welcome to kaeun</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-        *{
-            font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
-            line-height: 150%;
-        }
-        body{
-            margin-top: 180px;
-            margin: 0 auto;
-            max-width: 980px;
-        }
-        header, footer{
-            height: 100px;
-        }
-        header, h1{
-            display: inline;
-        }
-        footer{
-            background-color: gray;
-        }
-        nav{
-            height: 50px;
-        }
-        section{
-            display: flex;
-        }
-        .content{
-            flex: 4;
-        }
-        aside{
-            flex: 1;
-        }
-        ul{list-style-type: none;}
-        a{text-decoration: none;}
-        nav ul li{
-            display: inline;
-            padding: 15px 30px;
-            letter-spacing: 50x;
-        }
-        nav ul li:hover{
-            background-color: green;
-        }
-        nav ul{
-            text-align: center;
-        }
+        section{display: flex;}
+        .content{flex: 4;}
+        aside{flex: 1;}
     </style>
 </head>
 <body>
@@ -83,27 +45,27 @@
             <article>
                 <!--.bigdata (id는 #)-->
                 <div class="bigdata">
-                    <img src="./images/bigdata.jpg" alt="메인이미지" width="50%">
+                    <img src="./images/bigdata.jpg" class="w3-circle" alt="메인이미지" width="50%">
                 </div>
                 <div class="action">
                     <h2>나의 대외활동 이력</h2>
-                    <table border="1">
-                        <tr>
+                    <table>
+                        <tr class="w3-hover-green">
                             <th>기간</th>
                             <th>대외활동내용</th>
                             <th>주최</th>
                         </tr>
-                        <tr>
+                        <tr class="w3-hover-green">
                             <td>2021.3.</td>
                             <td>마케팅경진대회</td>
                             <td>정보학회</td>
                         </tr>
-                        <tr>
+                        <tr class="w3-hover-green">
                             <td>2022.5</td>
                             <td>GA 교육프로그램</td>
                             <td>동의대학교</td>
                         </tr>
-                        <tr>
+                        <tr class="w3-hover-green">
                             <td>2022.6</td>
                             <td>교육프로그램</td>
                             <td>동의대학교</td>
@@ -137,18 +99,19 @@
             <div class="login">
                 <h2>로그인</h2>
                 <form action="#" method="get">
-                    회원ID<input type="text" name="id" id=""> <br>
-                    비밀번호 <input type="password" name="pw" id=""> <br>
+                    회원ID<input type="text" class="w3-input w3-border" name="id" id=""> <br>
+                    비밀번호 <input type="password" class="w3-input w3-border" name="pw" id=""> <br>
                     남자 <input type="radio" name="gender" value="1" id="">
-                    여자 <input type="radio" name="gender" value="2" id="">
-                    <input type="submit" value="로그인">
-                    <input type="reset" value="재설정"> <br>
+                    여자 <input type="radio" name="gender" value="2" id=""> <br>
+                    <input type="submit" class="w3-button w3-black" value="로그인"> 
+                    <input type="reset" class="w3-button w3-black" value="재설정"> <br>
                 </form>
             </div>
         </aside>
     </section>
     <footer>저작권과 주소
         <div class="sns">
+            <a href="#">링크</a>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
         </div>
